@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Payment Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <h4>Payment form example</h4>
+    
+    <!-- Alert -->
+    <div class="alert alert-danger mt-3" role="alert">
+      Some fields are missing
+    </div>
+    
+    <form class="border p-4">
+      <div class="row mb-3">
+        <div class="col-md-5">
+          <label for="cardNumber" class="form-label">Card #</label>
+          <input type="text" class="form-control" id="cardNumber" placeholder="XXXXXXXXXXXXXXXX">
+        </div>
+        <div class="col-md-3">
+          <label for="cvc" class="form-label">CVC #</label>
+          <input type="text" class="form-control" id="cvc" placeholder="0000">
+        </div>
+        <div class="col-md-4">
+          <label for="amount" class="form-label">Amount</label>
+          <div class="input-group">
+            <span class="input-group-text">$</span>
+            <input type="text" class="form-control" id="amount" placeholder="Amount">
+          </div>
+        </div>
+      </div>
+      
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label for="firstName" class="form-label">First Name</label>
+          <input type="text" class="form-control" id="firstName">
+        </div>
+        <div class="col-md-6">
+          <label for="lastName" class="form-label">Last Name</label>
+          <input type="text" class="form-control" id="lastName">
+        </div>
+      </div>
+      
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label for="city" class="form-label">City</label>
+          <input type="text" class="form-control" id="city">
+        </div>
+        <div class="col-md-3">
+          <label for="state" class="form-label">State</label>
+          <select class="form-select" id="state">
+            <option selected>Pick a state</option>
+            <option>New York</option>
+            <option>California</option>
+            <option>Texas</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <label for="postalCode" class="form-label">Postal Code</label>
+          <input type="text" class="form-control" id="postalCode">
+        </div>
+      </div>
+      
+      <div class="mb-3">
+        <label class="form-label">We accept:</label>
+        <div class="bg-secondary p-2 rounded text-white d-inline-block">
+          <i class="bi bi-credit-card me-2"></i>
+          <i class="bi bi-paypal me-2"></i>
+          <i class="bi bi-credit-card-2-back me-2"></i>
+          <i class="bi bi-cash-stack"></i>
+        </div>
+      </div>
+      
+      <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" rows="3" placeholder="Add any notes here."></textarea>
+      </div>
+      
+      <div class="text-end">
+        <button type="button" class="btn btn-secondary">Cancel</button>
+        <button type="submit" class="btn btn-primary">Send</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Bootstrap icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</body>
+</html>
